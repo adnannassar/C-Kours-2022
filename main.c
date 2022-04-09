@@ -2,7 +2,7 @@
  
 
  int main (){
-     printf("Hallo \n");
+     printf("%d\n" , 1+2);
      
      return 1;
  }
