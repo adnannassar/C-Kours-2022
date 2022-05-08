@@ -21,6 +21,9 @@
         "algorithm": "c",
         "functional": "c",
         "iterator": "c",
-        "memory": "c"
+        "memory": "c",
+        "typeinfo": "c",
+        "string": "c",
+        "iosfwd": "c"
     }
 }

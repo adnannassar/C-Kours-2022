@@ -4,7 +4,6 @@
 int array[1];
 int n;
 
-
 void fill();
 void init();
 void addToArray(int i);
