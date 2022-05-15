@@ -3,40 +3,30 @@
 
 void swap(int *, int *);
 void increment(int *);
-
 int length(char* array);
 
 int main()
 {
-    int x, y;
-    int z[] = {4, 2, 1};
-    int *ptra, *ptrb;
-    ptra = &z[2];
-    x = *ptra - 2;
-    y = *(ptra - 1) - 2;
-    ptrb = ptra - 1;
-    *ptrb = 0;
-    *(z + 2) = 2;
-    z[0] = 2;
-    printf("%d, %d, %d, %d, %d\n\n", z[0], z[1], z[2], x, y);
 
-    char array[5] = {'H', 'A', 'L', 'L', 'O'};
-    printf("Size of array = %d\n" , length(array));
     /*
+    char array[] = {'A'};
+    printf("Size of array = %d\n" , length(array));
+    
     const int x;
     int *ptr;
    
     int y = 20;
-   
+    int x = 10 ; 
+
 
     printf("Size of x = %lu bytes\n", sizeof(x));
     printf("Size of ptr = %lu bytes\n", sizeof(ptr));
 
     char array[5] = {'H', 'A', 'L', 'L', 'O'};
-    const char *const ptr2 = &array[3];
+    //char * ptr2 = &array[3];
 
     printf("Size of array = %lu bytes\n", sizeof(array));
-    printf("Size of ptr2 = %lu bytes\n", sizeof(ptr2));
+        //    printf("Size of ptr2 = %lu bytes\n", sizeof(ptr2));
 
     increment(&x);
 
@@ -51,6 +41,9 @@ int main()
 
     printf("\nx = %d\n", x);
     printf("y = %d\n", y);
+    
+
+   // printf("Length: %d\n", length(ptr));
     */
     return 1;
 }
