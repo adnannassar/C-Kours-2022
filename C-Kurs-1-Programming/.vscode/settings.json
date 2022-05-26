@@ -27,6 +27,17 @@
         "iosfwd": "c",
         "__locale": "c",
         "__string": "c",
-        "string_view": "c"
+        "string_view": "c",
+        "__mutex_base": "c",
+        "array": "c",
+        "ios": "c",
+        "istream": "c",
+        "ostream": "c",
+        "sstream": "c",
+        "streambuf": "c",
+        "variant": "c",
+        "__functional_03": "c",
+        "__tuple": "c",
+        "stdio.h": "c"
     }
 }
