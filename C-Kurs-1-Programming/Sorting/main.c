@@ -4,6 +4,9 @@
 #include <string.h>
 
 void bubbleSort(int *array, int len);
+
+void bubbleSortString(char **array, int len);
+
 void swap(int *, int *);
 int main()
 {
@@ -55,4 +58,7 @@ void bubbleSort(int *array, int len)
             }
         }
     }
+}
+void bubbleSortString(char **array, int len){
+    //TODO
 }

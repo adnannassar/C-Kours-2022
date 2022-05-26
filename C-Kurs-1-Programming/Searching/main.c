@@ -7,14 +7,15 @@ bool leniarSearch(char *, char **, int);
 
 int main()
 {
-    
+    //TODO
 
-   // char **array = {"C++", "#", "Java", "css"};
+    // char **array = {"C++", "#", "Java", "css"};
     //printf("%d ", leniarSearch("Java", array, 4));
 
     return 1;
 }
 
+//TODO
 bool leniarSearch(char *word, char **array, int len)
 {
     for (int i = 0; i < len; i++)

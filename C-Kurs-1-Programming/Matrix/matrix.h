@@ -4,6 +4,7 @@ void init();
 void set(int, int , int);
 void print();
 
+//TODO
 void transpose();
 int getValueAt(int, int);
 bool search(int);
