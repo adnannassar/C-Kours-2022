@@ -44,10 +44,11 @@ bool isEmpty()
 }
 bool search()
 {
-    return false;
+    //TODO
 }
 void delete ()
 {
+    //TODO
 }
 void print()
 {
