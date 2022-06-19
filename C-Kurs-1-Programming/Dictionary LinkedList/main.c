@@ -3,6 +3,7 @@
 
 int main()
 {
+    
     insert(1);
     insert(6);
     insert(5);
@@ -24,10 +25,10 @@ int main()
     delete(1000);
     printDic();
 
-    insert(-15);
+    insert(-14);
     insert(3);
     insert(2);
-    insert(-30);
+    insert(-19);
     insert(112);
     insert(25);
 
@@ -42,6 +43,8 @@ int main()
 
     int searchedNumber4 = 20;
     printf("%d %s\n", searchedNumber4 ,  search(searchedNumber4) ? "gefunden" : "nicht gefunden");
+    
 
+    
     return 1;
 }

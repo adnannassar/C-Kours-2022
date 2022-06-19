@@ -19,7 +19,7 @@ Node *array[SIZE];
 int insert(int value)
 {
 
-    int hashIndex = value % SIZE;
+    int hashIndex = hash(value);
     Node *newNode = (Node *)malloc(sizeof(Node));
     if (newNode != NULL)
     {
@@ -43,7 +43,7 @@ int delete (int value)
     }
     else
     {
-        int hashIndex = value % SIZE;
+        int hashIndex = hash(value);
         if (array[hashIndex] != NULL)
         {
             Node *ptr = array[hashIndex];
@@ -80,7 +80,7 @@ int delete (int value)
 }
 bool search(int value)
 {
-    int hashIndex = value % SIZE;
+    int hashIndex = hash(value);
     if (array[hashIndex] != NULL)
     {
         Node *ptr = array[hashIndex];
@@ -136,25 +136,30 @@ void sortColums()
     }
 }
 
-void sortRows(){
+void sortRows()
+{
     // TODO
     /*
     quelle:
     -30     ->      3       ->      -15     ->      9       ->      6
     25      ->      112     ->      100     ->      10      ->      1
     2       ->      14      ->      8       ->      5
-    
-    erwartet: 
+
+    erwartet:
     -30     ->      -15       ->      3     ->      6       ->      9
     1       ->      10        ->      25    ->      100     ->      112
     2       ->      5         ->      8     ->      14
     */
 }
 
-
 void swap(int i, int j)
 {
     Node *temp = array[i];
     array[i] = array[j];
     array[j] = temp;
+}
+
+int hash(int value)
+{
+    return ((value % SIZE) + SIZE) % SIZE;
 }
