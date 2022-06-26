@@ -5,7 +5,7 @@
 #define INIT_CAPACITY 5
 
 int array[INIT_CAPACITY];
-int anzahl;
+int anzahl = 0;
 int newSize = INIT_CAPACITY;
 
 bool checkCapacityToAdd()
@@ -79,6 +79,10 @@ void delete (int value)
                     copyArray(array, newSize, newArray);
                 }
                 anzahl--;
+                // Shifting
+                // shiftRightToLeft(i);
+                shiftLeftToRight(i);
+                break;
             }
         }
     }
@@ -110,11 +114,23 @@ int getAnzahl()
 {
     return anzahl;
 }
-void shift()
+void shiftLeftToRight(int index)
 {
-    for (int i = 1; i < newSize ; i++)
+    for (int i = index; i < newSize; i++)
     {
-        array[i - 1] = array[i];
+        array[i] = array[i + 1];
     }
-    array[newSize - 1] = 0;
+    array[newSize] = 0;
+}
+
+void shiftRightToLeft(int index)
+{
+    for (int i = newSize - 1; i >= index; i--)
+    {
+        //  int temp = array[i - 1];
+        //  array[newSize - 1] = 0;
+        //  array[i - 1] = temp;
+    }
+
+    array[newSize] = 0;
 }

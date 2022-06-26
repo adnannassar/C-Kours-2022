@@ -29,6 +29,10 @@ int main()
 
     // printDebug();
     delete (5);
+    delete (2);
+    delete (4);
+    delete (1);
+   
     // printDebug();
     // shift();
     printDebug();

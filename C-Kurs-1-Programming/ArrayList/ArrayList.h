@@ -8,7 +8,7 @@ void printDebug();
 bool isEmpty();
 bool checkCapacityToAdd();
 bool checkCapacityToDelete();
-void copyArray(int*, int, int*);
+void copyArray(int *, int, int *);
 int getAnzahl();
-// TODO erweiterung für indexen
-void shift();
+void shiftLeftToRight();
+void shiftRightToLeft();
